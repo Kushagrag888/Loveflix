@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --loveflix-red: #e50914;
+  --bg-dark: #050505;
+}
+
+html, body, #root {
+  min-height: 100%;
+  background: var(--bg-dark);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.cinematic-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,.95) 10%, rgba(0,0,0,.35) 60%, rgba(0,0,0,.75) 100%);
+}
+
+.glass-card {
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; }
